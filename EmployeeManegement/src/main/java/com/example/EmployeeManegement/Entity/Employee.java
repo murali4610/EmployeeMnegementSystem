@@ -12,7 +12,7 @@ public class Employee {
     private String name;
 
     private Double salary;
-  private String address;
+    private String address;
     public Employee() {
     }
 
