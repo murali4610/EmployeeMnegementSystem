@@ -13,7 +13,7 @@ import java.util.List;
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
-     @PostMapping("/add/Employee")
+     @PostMapping("/add/employee")
     public ResponseEntity<Employee> insertTheEmployee(@RequestBody Employee employee){
         Employee employees =employeeService.inserEmployeeData(employee);
         return  ResponseEntity.status( HttpStatus.CREATED).body(employees);
